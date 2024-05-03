@@ -1,0 +1,651 @@
+:root{
+    --first-color: #F5F5F5;
+    --second-color: #EAF2FD;
+    --third-color: #FFFFFF;
+    --fourth-color: #2A7AE4;
+    --fifth-color: #464646;
+}
+
+html,
+body {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Raleway';
+  color: var(--fifth-color);
+  cursor: url('img/cursor-paimon.png'), auto;
+}
+section {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 30px 0 20px 0;
+  }
+
+  .cor_fundo {
+    background: var(--first-color);
+  }
+
+/* --------  Header  -------- */
+  header {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background: var(--first-color);
+  }
+
+  header #logo {
+    position: absolute;
+    top: 10px;
+    float: left;
+    height: 40px;
+    width: 170px;
+    margin-left: 5%;
+  }
+
+  header #logo img{
+    max-height: 100%;
+  }
+
+  header .menu {
+    float: right;
+    list-style: none;
+    margin-top: 0px;
+    margin-right: 5%;
+  }
+
+  header .menu li {
+    float: left;
+    font-size: 18px;
+    padding: 20px 10px 20px 10px;
+  }
+
+  header .menu li a {
+    color: initial;
+    text-decoration: initial;
+    color: var(--fifth-color);
+  }
+
+  header .menu li:hover {
+    background-color: var(--second-color);
+  }
+ /* -------- FIM Header  -------- */
+
+
+/*Seção Menu - LOGOTIPO DE IDENTIDADE VISUAL, NOME, OPÇÕES DE MENU E EMAIL*/
+.menu {
+  font-weight: bold;
+}
+
+#menu1 {
+background-color: var(--second-color);
+}
+
+#menu2, #menu3 {
+  background-color: var(--first-color);
+}
+
+#menu4 {
+background-color: var(--second-color);
+}
+
+#menu5 {
+  background-color: var(--first-color);
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+#menu6 {
+ background-color: var(--second-color);
+}
+
+
+/* Seção APRESENTAÇÃO - FOTO, TITULO, SUBTITULO E REDES SOCIAIS */
+/*DIV da Seção APRESENTAÇÃO */
+#div__section_presentation {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+}
+
+/*frase 01*/
+#title__bio {
+  font-size: 3.25rem;
+  size: 52px;
+  height: 700;
+  line-height: 61.05px;
+}
+
+/*frase 02*/
+#title__subsection {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25.83px;
+  text-align: left;
+}  
+
+/*UL com as Redes sociais*/
+.title__network {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.78px;
+  }
+
+
+/*Foto de perfil*/
+.title__profile {
+    padding-top: 40px;
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+  }
+/* FIM Seção APRESENTAÇÃO */
+
+/*Seção SOBRE MIM  - TITULO, DUAS FRASES E IMAGEM DE ASSINATURA*/
+/* Título */
+#about__title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 37.57px;
+}
+
+/* Paragrafo 01 e 02 */
+#about__paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.78px;
+  }
+
+
+/* Seção Skills*/
+.skills__box {
+  display: flex;
+  width: 100%;
+  height: 174px;
+  background-color: var(--third-color);
+  flex-wrap: wrap;
+  align-content: flex-end;
+  align-items: center;
+  justify-content: flex-start;
+  
+}
+
+/* imagem de cada skill */
+.skills__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+/* imagem de cada skill */
+#skill1, #skill2, #skill3, #skill4, #skill5 {
+  height: 32px;
+  width: 32px;
+  
+}
+
+/* nome de cada skill */
+.skills__name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
+    color: var(--fifth-color);
+    list-style: none;
+  }
+/* FIM Seção SOBRE MIM*/
+
+
+/* Seção Hobbies */
+/* Div da caixa de cada Hobbie - tem uma caixa que envolve cada uma das tecnologias, como se fosse uma moldura, 
+IGUAL SEÇÃO DE TECNOLOGIAS*/
+.hobbies__box {
+  display: flex;
+  width: 100%;
+  height: 174px;
+  background-color: var(--third-color);
+  flex-wrap: wrap;
+  align-content: flex-end;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* imagem de cada hobbie */
+.hobbies__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+/* imagem de cada hobbie */
+#hobbie1, #hobbie2, #hobbie3, #hobbie4 {
+  height: 32px;
+  width: 32px;
+}
+
+/* nome de cada hobbie */
+.hobbies__name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
+    color: var(--fifth-color);
+    list-style: none;
+}
+/* FIM Seção Hobbies */
+
+/* Seção de Experiência Acadêmica - TÍTULO e 03 GRUPOS DE TEXTOS*/
+/* Título "FORMAÇÃO ACADÊMICA" */
+#academic__title { 
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--fifth-color);
+  margin: 0;
+  padding-bottom: 32px;
+}
+
+/* DIV que envolve as duas caixas de formação acadêmica */
+#div__academic__formation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Div da caixa de cada CURSO - tem uma caixa que envolve cada uma das tecnologias, como se fosse uma moldura, 
+IGUAL SEÇÃO DE TECNOLOGIAS e SKILLS*/
+#academic_arq {
+  padding: 0;
+}
+
+#academic_fil {
+  padding: 0;
+}
+
+/* UL COM CADA curso - contendo IMAGEM, Título e subtítulo */
+.academic__courses__list {
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 25.83px;
+  color: var(--fifth-color);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+/* imagem de cada curso */
+.academic__courses__item__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--third-color);
+  width: 90%;
+  height: 286px;
+}
+
+#image__academic, #image__academic2 {
+  height: 100px;
+  width: 30%;
+}
+
+.academic__courses__item__title {
+  list-style: none;
+  align-self: start;
+  font-weight: 700;
+  size: 22px;
+  line-height: 25.83px;
+}
+
+.academic__courses__item__subtitle {
+  size: 16px;
+  font-weight: 500;
+  line-height: 18.78px;
+  list-style: none;
+  align-self: start;
+}
+
+/* Seção de Experiência Profissional/Projetos - Títulos, textos e botões*/
+#experience__title { 
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--fifth-color);
+  margin: 0;
+  padding-bottom: 32px;
+  padding-right: 500px;
+}
+
+.linha__exp__prof {
+  display: flex;
+  justify-content: center; /* Centraliza as colunas horizontalmente */
+  margin-bottom: 20px; /* Espaçamento entre as linhas */
+}
+
+.coluna__exp__prof {
+  flex: 1; /* Cada coluna ocupa a mesma largura */
+  margin: 0 30px; /* Espaçamento entre as colunas */
+  display: flex; 
+   /* Adiciona uma borda para separar as colunas */
+  padding: 10px; /* Espaçamento interno das colunas */
+}
+
+.conteudo__exp__prof {
+  flex: 1; /* O conteúdo ocupa a maior parte da coluna */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem__exp__prof {
+  flex: 1; /* A imagem ocupa a mesma largura que o conteúdo */
+}
+
+
+.imagem__exp__prof img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura da coluna */
+}
+
+/* BOTÃO de REPO */
+.experiencia__botao--repo {
+  border: 1px solid var(--fourth-color);
+  background-color: transparent;
+  width: 116px;
+  height: 51px;
+  padding: 16px 0px 0px 0px;
+  gap: 10px;
+  font-size: 16px;
+  display: inline-grid;
+  color: var(--fourth-color);
+  cursor: pointer;
+}
+
+/* BOTÃO de DEMO */
+.experiencia__botao--demo {
+  width: 105px;
+  height: 51px;
+  padding: 16px 0px 0px 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.78px;
+  display: inline-grid;
+  background-color: var(--fourth-color);
+  color: var(--third-color);
+  border:var(--fourth-color);
+} 
+
+
+/* --------  Contato  -------- */
+
+/* FORMULÁRIO - COM INPUTS E BOTÕES */
+/* Título "Contato" */
+.formcontato__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--fifth-color);
+  margin-bottom: 1rem;
+  line-height: 37.57px;
+  text-align: start;
+}
+
+/* IMAGEM  */
+#formcontato__img {
+  height: 593px;
+}
+
+/* texto 02 e 03 */
+.formcontato__subtext {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--fifth-color);
+  line-height: 18.78px;
+}
+
+/* FORMULÁRIO - COM INPUTS E BOTÕES */
+.formcontato__form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px; /* gap entre os inputs */
+  height: 397px;
+}
+
+/* DIV com nome e span */
+.form__campo {
+  display: flex;
+  flex-direction: column;
+  }
+
+/* INPUTS (nome, e-mail e assunto) */
+.formcontato__input {
+  height: 40px;
+  top: 8px;
+  padding: 0px 12px 0px 12px;
+  gap: 0px;
+  border: none;
+}
+/* Textarea */
+.formcontato__textarea {
+  
+  height: 133px;
+  padding: 0px 12px 0px 12px;
+  gap: 4px;
+  border-radius: 4px 0px 0px 0px;
+  font-family: Raleway;
+  border: none;
+}
+
+/* botão - de enviar mensagem */
+.formcontato__botao {
+  width: 165px;
+  height: 51px;
+  padding: 16px 0px 16px 0px;
+  gap: 10px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.78px;
+  display: inline-grid;
+  background-color: var(--fourth-color);
+  color: var(--third-color);
+  border: var(--fourth-color);
+}
+
+/* --------  Footer  -------- */
+footer {
+  background-color: var(--third-color);
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30px 0 50px 0;
+  color: var(--fifth-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer .container {
+  padding: 30px 0 50px 0;
+}
+
+/* --------  Validação Formulário  -------- */
+.mensagem-erro {
+  color: red;
+ }
+
+/* --------  Colunas  -------- */
+.coluna {
+  float: left;
+  padding: 0 5%;
+  position: relative;
+}
+.coluna.cinco {
+  width: 12%;
+  padding: 0 2% 0 2%;
+}
+
+.coluna.quatro {
+  width: 15%;
+  padding: 0 5% 0 5%;
+}
+
+.coluna.tres {
+  width: 29%;
+  padding: 0 4% 0 4%;
+}
+
+.coluna.dois {
+  width: 40%;
+}
+
+.coluna .icone {
+  border-radius: 50%;
+  height: 85px;
+  width: 85px;
+  text-align: center;
+  margin: 0 auto;
+}
+.coluna .icone img{
+  max-width: 60%;
+  max-height: 60%;
+  margin: 15px;
+}
+
+.coluna img {
+  height: 300px;
+  width: 100%;
+}
+.coluna iframe { 
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/* --------  FIM Colunas  -------- */
+
+/* --------  Textos  -------- */
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: 'Raleway';
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+h4 {
+padding-top: 8px;
+
+}
+
+.esquerda {
+  text-align: left;
+}
+
+.direita {
+  text-align: right;
+}
+
+.centro {
+  text-align: center;
+}
+
+.justificado {
+  text-align: justify;
+}
+
+.start {
+  text-align: start;
+}
+/* --------  FIM Textos  -------- */
+
+
+/* --------  Responsividade  --------*/
+
+@media only screen and (min-width: 769px) and (max-width: 890px) {
+  .menu {
+    display: none;
+   }
+}
+
+@media all and (max-width: 768px) {
+  .coluna, .coluna.cinco, .coluna.quatro, .coluna.tres, .coluna.dois {
+    display: block;
+    width: 80%;
+    padding: 0;
+    margin: 10px auto;
+    float: none;
+  }
+  header #logo {
+    position: relative;
+    width: 100%;
+    margin-left: 30px;
+    text-align: start;
+  }
+.menu {
+  display: none;
+ }
+
+  figure h1.titulo {
+    margin-top: 40%;
+  }
+  figure h2.titulo {
+    margin: 0 10% 0 10%;
+  }
+
+
+/* PROJETOS */
+.coluna__exp__prof {
+    padding: 10px;
+  }
+
+.coluna__exp__prof {
+      flex: 1;
+      margin: 0 30px; /* Espaçamento entre as colunas */
+      display: flex;
+      flex-direction: column;
+  }
+
+.conteudo__exp__prof {
+    flex: 1; /* O conteúdo ocupa a maior parte da coluna */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+.imagem__exp__prof img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da coluna */
+  }
+}
+
+/* FORMULÁRIO - COM INPUTS E BOTÕES */
+/* IMAGEM FORM CONTATO*/
+#formcontato__img {
+  display: none;
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 696px) {
+#experience__title { 
+  padding-right: 100px;
+}    
+  } 
+
